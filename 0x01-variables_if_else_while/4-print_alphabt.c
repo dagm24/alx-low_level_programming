@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-char ch = 'b';
+char ch = 'a';
 while (ch <= 'z')
 {
 if (ch != 'e' && ch != 'q')
