@@ -5,40 +5,25 @@
  */
 int main(void)
 {
-int i, j, k, l, x, y;
-i = j = k = l = 48;
-while (l < 58)
+int i, j;
+for (i = 0; i < 100; i++)
 {
-k = 48;
-while (j < 58)
+for (j = 0; j < 100; j++)
 {
-i = 48;
-while (k < 58)
+if (i < 7)
 {
-j = 48;
-while (i < 58)
-{
-x = (l * 10) + k;
-y = (j * 10) + i;
-if (x < y)
-{
-putchar(l);
-putchar(k);
+putchar((i / 10) + 48);
+putchar((i % 10) + 48);
 putchar(' ');
-putchar(j);
-putchar(i);
-if (l == 57 && k == 56 && j == 57 && i == 57)
-break;
+putchar((j / 10) + 48);
+putchar((j % 10) + 48);
+if (i != 98 || j != 99)
+{
 putchar(',');
 putchar(' ');
 }
-i++;
 }
-j++;
 }
-k++;
-}
-l++;
 }
 putchar('\n');
 return (0);
