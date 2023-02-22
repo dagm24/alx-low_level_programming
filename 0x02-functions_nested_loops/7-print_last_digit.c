@@ -6,12 +6,12 @@
  */
 int print_last_digit(int r)
 {
-int |Digit;
-|Digit = r % 10;
-if (|Digit < 0)
+int Digit;
+Digit = r % 10;
+if (Digit < 0)
 {
-|Digit *= -1;
+Digit *= -1;
 }
-_putchar(|Digit + '0');
-return (|Digit);
+_putchar(Digit + '0');
+return (Digit);
 }
