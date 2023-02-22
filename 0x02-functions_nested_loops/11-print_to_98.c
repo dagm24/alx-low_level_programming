@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * print_to_98 - print natural numbers to 98
  * @n:number to start from
@@ -13,12 +14,12 @@ for (;n <= 98; n++)
 {
 if (n == 98)
 {
-printf("%i\n", n);
+printf("%i", n);
 break;
 }
 else
 {
-printf("%d, ", n);
+printf("%d", n);
 }
 }
 }
@@ -28,12 +29,12 @@ for (;n >= 98; n--)
 {
 if (n == 98)
 {
-printf("%d\n", n);
+printf("%d", n);
 break;
 }
 else
 {
-printf("%d, ", n);
+printf("%d", n);
 }
 }
 }
