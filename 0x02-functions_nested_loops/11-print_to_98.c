@@ -14,7 +14,7 @@ for (; n <= 98; n++)
 {
 if (n == 98)
 {
-printf("%i", n);
+printf("%i \n", n);
 break;
 }
 else
@@ -29,7 +29,7 @@ for (; n >= 98; n--)
 {
 if (n == 98)
 {
-printf("%d", n);
+printf("%d \n", n);
 break;
 }
 else
