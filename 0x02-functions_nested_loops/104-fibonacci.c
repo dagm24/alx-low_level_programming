@@ -27,14 +27,16 @@ h2 = f1_h2 + f2_h2;
 if ((f1_h2 + f2_h2) > 9999999999)
 h1 += 1;
 h2 %= 10000000000;
-}
 printf("%lu%lu", h1, h2);
+}
 if (count != 98)
+{
 printf(",");
 f1_h1 = f2_h1;
 f1_h2 = f2_h2;
 f2_h1 = h1;
 f2_h2 = h2;
 printf("\n");
+}
 return (0);
 }
