@@ -10,7 +10,7 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *a);
 char *cap_string(char *str);
 char *leet(char *a);
-char *rot13(char *a);
+char *rot13(char *s);
 void print_number(int n);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
