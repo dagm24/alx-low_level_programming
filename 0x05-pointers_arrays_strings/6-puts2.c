@@ -4,7 +4,7 @@
  * starting with the first one
  * return:print
  */
-void puts2(char *str)
+void puts_half(char *str)
 {
 int longi = 0;
 int i = 0;
