@@ -15,5 +15,6 @@ n = (longi / 2);
 if ((longi % 2) == 1)
 n = ((longi + 1) / 2);
 for (i = n; str[i] != '\0'; i++)
+_putchar(str[1]);
 _putchar('\n');
 }
