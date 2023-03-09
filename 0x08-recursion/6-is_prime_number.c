@@ -23,5 +23,5 @@ if (i == 1)
 return (1);
 if (n % i == 0 && i > 0)
 return (0);
-return (actual_pime(n, i - 1));
+return (actual_prime(n, i - 1));
 }
