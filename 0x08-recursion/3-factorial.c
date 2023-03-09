@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * factrorial -returns the factorial of a number
+ * _factrorial -returns the factorial of a given number
  * @n:number to return the factorial from
  * Return:factorail of n
  */
