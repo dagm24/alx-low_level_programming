@@ -7,29 +7,29 @@
 int main(void)
 {
 int r;
-r = wildcamp("main.c", "*.c");
+r = wildcmp("main.c", "*.c");
 printf("%d\n", r);
-r = wildcamp("main.c", "m*a*i*n .*c*");
+r = wildcmp("main.c", "m*a*i*n .*c*");
 printf("%d\n", r);
-r = wildcamp("main.c", "main.c");
+r = wildcmp("main.c", "main.c");
 printf("%d\n", r);
-r = wildcamp("main.c", "m*c");
+r = wildcmp("main.c", "m*c");
 printf("%d\n", r);
-r = wildcamp("main.c", "ma********************************c");
+r = wildcmp("main.c", "ma********************************c");
 printf("%d\n", r);
-r = wildcamp("main.c", "*");
+r = wildcmp("main.c", "*");
 printf("%d\n", r);
-r = wildcamp("main.c", "***");
+r = wildcmp("main.c", "***");
 printf("%d\n", r);
-r = wildcamp("main.c", "m.*c");
+r = wildcmp("main.c", "m.*c");
 printf("%d\n", r);
-r = wildcamp("main.c", "**.*c");
+r = wildcmp("main.c", "**.*c");
 printf("%d\n", r);
-r = wildcamp("main-main.c", "ma*in.c");
+r = wildcmp("main-main.c", "ma*in.c");
 printf("%d\n", r);
-r = wildcamp("main", "main*d");
+r = wildcmp("main", "main*d");
 printf("%d\n", r);
-r = wildcamp("abc", "*b");
+r = wildcmp("abc", "*b");
 printf("%d\n", r);
 return (0);
 }
