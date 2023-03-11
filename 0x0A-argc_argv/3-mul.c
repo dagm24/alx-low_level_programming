@@ -53,7 +53,7 @@ return (1);
 }
 i = _atoi(argv[1]);
 j = _atoi(argv[2]);
-mul = i * j;
+mul = i *j;
 printf("%d\n", mul);
 return (0);
 }
