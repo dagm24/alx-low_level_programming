@@ -1,26 +1,25 @@
 #include <stdio.h>
 /**
-*main - prints out first 50
-*fibonacci suit numbers
-*Return: return 0
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int inc;
-unsigned long n1 = 0, n2 = 1, n3;
-for (inc = 0; inc < 50; inc++)
-{
-n3 = n1 + n2;
-printf("%lu", n3);
-n1 = n2;
-n2 = n3;
+	int i;
+	long int fibonacci[50];
 
-if (inc == 49)
-printf("\n");
-else
-printf(", ");
+	fibonacci[0] = 1;
+	fibonacci[1] = 2;
+	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
-}
-
-return (0);
+	for (i = 2; i < 50; i++)
+	{
+		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+		if (i == 49)
+			printf("%ld\n", fibonacci[i]);
+		else
+			printf("%ld, ", fibonacci[i]);
+	}
+	return (0);
 }
