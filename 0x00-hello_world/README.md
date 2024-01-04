@@ -44,44 +44,62 @@ $CFILE: This seems to be a placeholder for the name of the C source file you wan
 -o cisfun: This option specifies the output file name. In this case, the output file will be named "cisfun."
 
 So, the overall purpose of this command is to compile the specified C source file and produce an object file named "cisfun.o."
- 4Hello-Puts
+
+ 4-Hello-Puts
      C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
      Use the function puts
      You are not allowed to use printf
      Your program should end with the value 0
+     
 1,Header Inclusion:
 The inclusion of standard C libraries (<stdio.h> and <string.h>) for input/output and string manipulation.
+
 2,Function Documentation:
 A comment block documenting the purpose of the main function, specifying it as the main entry point of the program and indicating that it returns 0.
+
 3,Variable Declaration:
 Declaration of a character array named displayed with a size of 52 elements.
+
 4,String Manipulation:
 Use of strcpy to copy the string "Programming is like building a multilingual puzzle" into the displayed array.
+
 5,Output to Console:
 Printing the content of the displayed array to the console using the puts function.
+
 6,Program Termination:
 The return (0); statement, indicating that the program executed successfully.
+
 *In essence, the code showcases basic C syntax, string manipulation, and output to the console within the context of a simple program.* 
+ 
  5-Hello,Printf
+
 1,Header Inclusion:
 The inclusion of the standard input/output library (<stdio.h>) to use the printf function.
+
 2,Function Documentation:
 A comment block documenting the purpose of the main function, specifying it as the main entry point of the program, and indicating that it returns 0.
+
 3,Function Declaration:
 Declaration of the main function, which serves as the starting point of program execution.
+
 4,Formatted Output:
 Use of the printf function to print a formatted string to the console.
+
 5,Newline Character:
 The inclusion of a newline character (\n) in the printed string to move the cursor to the next line.
+
 6,Program Termination:
 The return (0); statement, indicating that the program executed successfully.
+
 *In summary, this code serves as a simple introduction to key elements in a C program, including function structure, basic documentation, formatted output, and program termination. It emphasizes the use of the printf function for displaying information to the console.*
+ 
  6-Size is not grandeur, and territory does not make a nation
     program that prints the size of various types on the computer it is compiled and run on.
     You should produce the exact same output as in the example
     Warnings are allowed
     Your program should return 0
     You might have to install the package libc6-dev-i386 on your Linux to test the -m32 gcc option
+
 sizeof Operator:
 
 Purpose: The sizeof operator in C is used to determine the size, in bytes, of a data type or an object.
@@ -107,6 +125,7 @@ Common Format Specifiers:
 %lf: Double-precision floating-point
 Usage: printf("The value is: %d\n", myVariable);, scanf("%f", &floatVariable);
 *Understanding these concepts is crucial for writing effective C programs. The sizeof operator helps manage memory, identifiers give meaningful names to program entities, and format specifiers ensure correct input and output formatting.*
+
  7-Intel
    script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
    The C file name will be saved in the variable $CFILE.
