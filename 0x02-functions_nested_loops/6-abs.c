@@ -8,7 +8,9 @@
 int _abs(int r)
 {
 	if (r >= 0)
+	// If true, return r as it is (already positive or zero)	
 	return (r);
 	else
+		// If false, return the negation of r (convert to positive)
 		return (r * -1);
 }

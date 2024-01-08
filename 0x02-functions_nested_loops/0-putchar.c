@@ -7,6 +7,7 @@
 
 int main(void)
 {
+	   // Function calls to _putchar to print each character
 	_putchar('_');
 	_putchar('p');
 	_putchar('u');
