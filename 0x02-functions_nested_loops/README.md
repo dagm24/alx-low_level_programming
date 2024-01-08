@@ -54,3 +54,22 @@ function prototype --- int _abs(int r)
 The code use a conditional statement to determine whether the input number is positive or negative and returns the appropriate absolute value. 
 
      7-print_last_digit.c
+     
+function prototype ---   int print_last_digit(int r);
+
+The code demonstrates the use of a conditional statement to determine whether the input number is negative, calculates the last digit, prints it using the _putchar function, and returns the last digit as an integer.
+
+       8-24_hours.c
+       
+function prototype ---   void jack_bauer(void);
+
+The code prints every minute of a day in the format HH:MM. The function uses nested loops to iterate through all possible hours and minutes in a 24-hour clock. _putchar function is used to print each part of the time. The result is a formatted display of every minute in a 24-hour period.
+
+      9-times_table.c
+      
+function prototype ---  void times_table(void);
+
+The code demonstrates the use of nested loops to iterate through rows and columns, calculates and prints the product of each combination, and formats the output as a multiplication table.  The output is formatted in a grid-like structure. 
+
+
+
