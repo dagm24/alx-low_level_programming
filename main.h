@@ -1,18 +1,14 @@
-/**
-*File:main.h
-*header file containing functions declaration
-*/
+#ifndef MAIN_H
+#define MAIN_H
 
-void print_alphabet(void);
-void jack_bauer(void);
-void print_alphabet_x10(void);
-void times_table();
-void print_to_98(int);
-void print_times_table(int);
-int _putchar(char);
-int _islower(int c);
-int _isalpha(int c);
-int print_sign(int n);
-int _abs(int);
-int add(int n, int m);
-int print_last_digit(int n);
+char *create_array(unsigned int size, char c);
+char *_strdup(char *str);
+char *str_concat(char *s1, char *s2);
+int **alloc_grid(int width, int height);
+void free_grid(int **grid, int height);
+char *argstostr(int ac, char **av);
+char **strtow(char *str);
+int _putchar(char c);
+
+#endif
+
