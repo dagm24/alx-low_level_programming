@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
 * print_list - prints all the elements of a list
 *
@@ -6,20 +7,19 @@
 *
 *Return: the number of nodes
 */
-size_t print_list(const list_t *h)
+size_t print_list(const list_t *s)
 {
-const list_t *cursor = h;
-size_t count = 0;
+	size_t nodes = 0;
 
-while (cursor != NULL)
-{
-if (cursor->str != NULL)
-printf("[% d] '%s'\n", cursor->len, cursor->str);
-else
-printf("[0] (nil)\n");
-count += 1;
-cursor = cursor->next;
-}
-return (count);
+	while (s != NULL)
+	{
+		if (s->str == NULL)
+			printf("[%d] %s\n", 0, "(nil)");
+		else
+			printf("[%d] %s\n", s->len, s->str);
+		s = s->next;
+		nodes++;
+	}
+	return (nodes);
 }
 
