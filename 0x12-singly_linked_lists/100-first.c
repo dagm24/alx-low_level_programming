@@ -1,19 +1,26 @@
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-
-#include <stdio.h>
-
-void __attribute__((constructor)) hare(void);
+#include "lists.h"
 
 /**
- * hare - Prints a string before the
- *        main function is executed.
+ * free_list - function that frees memory allocated to a struct
+ *            type list_t linked list
+ * @head: pointer to first member of list
  */
-void hare(void)
+
+void free_list(list_t *head)
 {
-	printf("You're beat! and yet, you must allow,\n"
-	       "I bore my house upon my back!\n");
+	list_t *temp;
+
+	if (!head)
+		return;
+
+	while (head != NULL)
+	{
+/* point to current head */
+		temp = head;
+/* current head moves one member forward in list */
+		head = head->next;
+/* free string and stuct ptr alloced for previous head */
+		free(temp->str);
+		free(temp);
+	}
 }
