@@ -1,26 +1,12 @@
-#include "lists.h"
+#include <stdio.h>
 
 /**
- * free_list - function that frees memory allocated to a struct
- *            type list_t linked list
- * @head: pointer to first member of list
+ * bmain - function executed before main
+ * Return: no return.
  */
 
-void free_list(list_t *head)
+void __attribute__ ((constructor)) bmain()
 {
-	list_t *temp;
-
-	if (!head)
-		return;
-
-	while (head != NULL)
-	{
-/* point to current head */
-		temp = head;
-/* current head moves one member forward in list */
-		head = head->next;
-/* free string and stuct ptr alloced for previous head */
-		free(temp->str);
-		free(temp);
-	}
+	printf("You're beat! and yet, you must allow");
+	printf(",\nI bore my house upon my back!\n");
 }
