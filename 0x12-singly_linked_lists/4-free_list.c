@@ -1,26 +1,19 @@
 #include "lists.h"
 
 /**
- * free_list - function that frees memory allocated to a struct
- *            type list_t linked list
- * @head: pointer to first member of list
+ * free_list - frees a list
+ * @head: head of the linked list.
+ * Return: no return.
  */
 
 void free_list(list_t *head)
 {
-	list_t *temp;
+	list_t *current;
 
-	if (!head)
-		return;
-
-	while (head != NULL)
+	while ((current = head) != NULL)
 	{
-/* point to current head */
-		temp = head;
-/* current head moves one member forward in list */
 		head = head->next;
-/* free string and stuct ptr alloced for previous head */
-		free(temp->str);
-		free(temp);
+		free(current->str);
+		free(current);
 	}
 }
