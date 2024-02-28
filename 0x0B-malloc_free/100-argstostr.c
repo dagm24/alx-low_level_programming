@@ -1,36 +1,34 @@
 #include "main.h"
 #include <stdlib.h>
+#include <string.h>
 /**
- * argstostr-concatenates all the argments of the program
- * @ac:number of arguments
- * @av:array of arguments
- * Return:pointer to the new string(success) NULL
+ * argstostr - function that  concatenates all the arguments of the program
+ * @ac: number of arguments
+ * @av: pointer to to pointer to arguments
+ * Return: string with all arguments
  */
 char *argstostr(int ac, char **av)
 {
-int i, j, k, len;
-char *str;
-if (ac == 0 || av == NULL)
-return (NULL);
-for (i = 0; i < ac; i++)
-{
-for (j = 0; av[i][j] != '\0'; j++)
-len++;
-len++;
-}
-str = malloc(sizeof(char) * (len + 1));
-if (str == NULL)
-return (NULL);
-k = 0;
-for (i = 0; i < ac; i++)
-{
-for (j  = 0; av[i][j] != '\0'; j++)
-{
-str[k] = av[i][j];
-}
-str[k] = '\n';
-k++;
-}
-return (str);
-}
+	char *str = NULL;
+	int i = 0, j = 0, len = ac, k = 0;
 
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	for (; i < ac; i++)
+		len += strlen(av[i]);
+	str = (char *)malloc((len + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+		len = strlen(av[i]);
+		for (j = 0; j < len; j++)
+		{
+			str[k] = av[i][j];
+			k++;
+		}
+		str[k] = '\n';
+		k++;
+	}
+	return (str);
+}
